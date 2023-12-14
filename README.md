@@ -1,4 +1,4 @@
-# PsychicBondTweaks
+# Psychic Bond Tweaks
 A Highmate walked into a colony… 
 
 Your prayers have finally been answered with this Psychic Bond Tweaks Mod that allows better control over those pesky Highmates. 
