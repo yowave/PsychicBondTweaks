@@ -46,4 +46,4 @@ This Mod should not cause any noticeable impact on performance.
 # Legal
 The Psychic Bond Tweaks Mod is a completely Open Source Mod. You can find the Source Material on [Github](https://github.com/yowave/PsychicBondTweaks).
 
-All we ask is that you credit the Original Author and Link to the original Mod on Steam Workshop and [Github](https://github.com/yowave/PsychicBondTweaks).
+All we ask is that you credit the Original Author and Link to the original Mod on [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3113691710) and [Github](https://github.com/yowave/PsychicBondTweaks).
