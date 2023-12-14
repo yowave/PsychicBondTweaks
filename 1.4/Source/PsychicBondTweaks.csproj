@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D2B2A2DB-9E82-4AA4-87DB-6978FC731B6D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PsychicBondTweaks</RootNamespace>
+    <AssemblyName>PsychicBondTweaks</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <LangVersion>11</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Assemblies\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <!-- Prevents copying DLLs on build. -->
+  <!-- If you do still get copies, wipe out the `obj` folder and re-run the `restore` task. -->
+  <!-- You can do this on the command line with: `msbuild /t:restore` -->
+  <ItemDefinitionGroup>
+    <Reference>
+      <Private>False</Private>
+    </Reference>
+    <ProjectReference>
+      <Private>False</Private>
+    </ProjectReference>
+    <PackageReference>
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </PackageReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony, Version=2.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Lib.Harmony.2.2.2\lib\net472\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
+    <!-- RimWorld references -->
+    <Reference Include="Assembly-CSharp" />
+    <Reference Include="ISharpZipLib" />
+    <Reference Include="Unity.TextMeshPro" />
+    <Reference Include="UnityEngine.AIModule" />
+    <Reference Include="UnityEngine.AccessibilityModule" />
+    <Reference Include="UnityEngine.AndroidJNIModule" />
+    <Reference Include="UnityEngine.AnimationModule" />
+    <Reference Include="UnityEngine.AssetBundleModule" />
+    <Reference Include="UnityEngine.AudioModule" />
+    <Reference Include="UnityEngine.ClothModule" />
+    <Reference Include="UnityEngine.ClusterInputModule" />
+    <Reference Include="UnityEngine.ClusterRendererModule" />
+    <Reference Include="UnityEngine.CoreModule" />
+    <Reference Include="UnityEngine.CrashReportingModule" />
+    <Reference Include="UnityEngine.DSPGraphModule" />
+    <Reference Include="UnityEngine.DirectorModule" />
+    <Reference Include="UnityEngine.GameCenterModule" />
+    <Reference Include="UnityEngine.GridModule" />
+    <Reference Include="UnityEngine.HotReloadModule" />
+    <Reference Include="UnityEngine.IMGUIModule" />
+    <Reference Include="UnityEngine.ImageConversionModule" />
+    <Reference Include="UnityEngine.InputLegacyModule" />
+    <Reference Include="UnityEngine.InputModule" />
+    <Reference Include="UnityEngine.JSONSerializeModule" />
+    <Reference Include="UnityEngine.LocalizationModule" />
+    <Reference Include="UnityEngine.ParticleSystemModule" />
+    <Reference Include="UnityEngine.PerformanceReportingModule" />
+    <Reference Include="UnityEngine.Physics2DModule" />
+    <Reference Include="UnityEngine.PhysicsModule" />
+    <Reference Include="UnityEngine.ProfilerModule" />
+    <Reference Include="UnityEngine.ScreenCaptureModule" />
+    <Reference Include="UnityEngine.SharedInternalsModule" />
+    <Reference Include="UnityEngine.SpriteMaskModule" />
+    <Reference Include="UnityEngine.SpriteShapeModule" />
+    <Reference Include="UnityEngine.StreamingModule" />
+    <Reference Include="UnityEngine.SubstanceModule" />
+    <Reference Include="UnityEngine.TLSModule" />
+    <Reference Include="UnityEngine.TerrainModule" />
+    <Reference Include="UnityEngine.TerrainPhysicsModule" />
+    <Reference Include="UnityEngine.TextCoreModule" />
+    <Reference Include="UnityEngine.TextRenderingModule" />
+    <Reference Include="UnityEngine.TilemapModule" />
+    <Reference Include="UnityEngine.UI" />
+    <Reference Include="UnityEngine.UIElementsModule" />
+    <Reference Include="UnityEngine.UIModule" />
+    <Reference Include="UnityEngine.UNETModule" />
+    <Reference Include="UnityEngine.UmbraModule" />
+    <Reference Include="UnityEngine.UnityAnalyticsModule" />
+    <Reference Include="UnityEngine.UnityConnectModule" />
+    <Reference Include="UnityEngine.UnityTestProtocolModule" />
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule" />
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule" />
+    <Reference Include="UnityEngine.UnityWebRequestModule" />
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule" />
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule" />
+    <Reference Include="UnityEngine.VFXModule" />
+    <Reference Include="UnityEngine.VRModule" />
+    <Reference Include="UnityEngine.VehiclesModule" />
+    <Reference Include="UnityEngine.VideoModule" />
+    <Reference Include="UnityEngine.WindModule" />
+    <Reference Include="UnityEngine.XRModule" />
+    <Reference Include="UnityEngine" />
+    <!-- The following are not available on all platforms, IE Linux. -->
+    <!-- <Reference Include="UnityEngine.ARModule" /> -->
+    <!-- <Reference Include="NAudio" /> -->
+    <!-- <Reference Include="NVorbis" /> -->
+    <!-- end RimWorld references -->
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Extensions\PsychicBondExtensions.cs" />
+    <Compile Include="Patches\Gene_PsychicBonding_Patches.cs" />
+    <Compile Include="Patches\HediffWithTarget_Patches.cs" />
+    <Compile Include="Patches\Hediff_Patches.cs" />
+    <Compile Include="Patches\Hediff_PsychicBondTorn_Patches.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Startup.cs" />
+    <Compile Include="PsychicBondTweaks.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\PsychicBondUtils.cs" />
+    <Compile Include="Utils\Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

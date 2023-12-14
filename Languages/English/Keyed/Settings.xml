@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <debug_mode>Debug Mode</debug_mode>
+    <debug_mode_desc>Print debug information to log file/console.</debug_mode_desc>
+	
+	<distance_consciousness_bonus>Psychic bond distance consciousness debuff/buff</distance_consciousness_bonus>
+	<distance_consciousness_bonus_desc>When bonded pawns are in different maps they suffer a debuff to their consciousness.\n\nCan be set between -100 to 100.\n\nPositive numbers will buff consciousness.\n\nNegative numbers will debuff consciousness.\n\nDefault -25%.</distance_consciousness_bonus_desc>
+	
+	<consciousness_bonus>Psychic bond consciousness buff</consciousness_bonus>
+	<consciousness_bonus_desc>When bonded pawns are close to each other their consciousness get buffed.\n\nCan be set between 0 to 100.\n\nDefault 15%.</consciousness_bonus_desc>
+	
+	<bond_torn_mood_effect>Bond torn mood effect</bond_torn_mood_effect>
+	<bond_torn_mood_effect_desc>When the bond is torn the pawn will suffer decreased mood for 30 days.\n\nCan be set between -100 to 100.\n\nPositive numbers will buff mood.\n\nNegative numbers will debuff mood.\n\nDefault -25.</bond_torn_mood_effect_desc>
+</LanguageData>
