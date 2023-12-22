@@ -26,10 +26,11 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\Assemblies\</OutputPath>
+    <OutputPath>E:\SteamLibrary\steamapps\common\RimWorld\Mods\PsychicBondTweaks\1.4\Assemblies\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
   </PropertyGroup>
   <!-- Prevents copying DLLs on build. -->
   <!-- If you do still get copies, wipe out the `obj` folder and re-run the `restore` task. -->
@@ -123,15 +124,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Extensions\PsychicBondExtensions.cs" />
+    <Compile Include="Extensions\TranslationExtensions.cs" />
+    <Compile Include="Patches\InteractionWorker_RomanceAttempt_Patches.cs" />
+    <Compile Include="Patches\ThoughtWorker_PsychicBondProximity_Patches.cs" />
+    <Compile Include="Patches\FloatMenuMakerMap_Patches.cs" />
     <Compile Include="Patches\Gene_PsychicBonding_Patches.cs" />
     <Compile Include="Patches\HediffWithTarget_Patches.cs" />
     <Compile Include="Patches\Hediff_Patches.cs" />
     <Compile Include="Patches\Hediff_PsychicBondTorn_Patches.cs" />
+    <Compile Include="Patches\Hediff_PsychicBond_Patches.cs" />
+    <Compile Include="Patches\Pawn_Patches.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="PsychicBondTweaks.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Textures.cs" />
+    <Compile Include="Utils\Listing_GUI.cs" />
     <Compile Include="Utils\PsychicBondUtils.cs" />
+    <Compile Include="Store.cs" />
+    <Compile Include="Utils\TimeUtils.cs" />
     <Compile Include="Utils\Utils.cs" />
   </ItemGroup>
   <ItemGroup>

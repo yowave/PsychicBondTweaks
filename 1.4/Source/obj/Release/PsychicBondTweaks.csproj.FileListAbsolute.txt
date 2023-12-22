@@ -23,3 +23,7 @@ E:\SteamLibrary\steamapps\common\RimWorld\Mods\PsychicBondTweaks\1.4\Assemblies\
 E:\SteamLibrary\steamapps\common\RimWorld\Mods\PsychicBondTweaks\1.4\Source\obj\Release\PsychicBondTweaks.csproj.AssemblyReference.cache
 E:\SteamLibrary\steamapps\common\RimWorld\Mods\PsychicBondTweaks\1.4\Source\obj\Release\PsychicBondTweaks.csproj.CoreCompileInputs.cache
 E:\SteamLibrary\steamapps\common\RimWorld\Mods\PsychicBondTweaks\1.4\Source\obj\Release\PsychicBondTweaks.dll
+D:\Games\1games info_utils\RimWorld\Local Mods Source\PsychicBondTweaks\1.4\Source\obj\Release\PsychicBondTweaks.csproj.AssemblyReference.cache
+D:\Games\1games info_utils\RimWorld\Local Mods Source\PsychicBondTweaks\1.4\Source\obj\Release\PsychicBondTweaks.csproj.CoreCompileInputs.cache
+D:\Games\1games info_utils\RimWorld\Local Mods Source\PsychicBondTweaks\1.4\Source\obj\Release\PsychicBondTweaks.dll
+D:\Games\1games info_utils\RimWorld\Local Mods Source\PsychicBondTweaks\1.4\Assemblies\PsychicBondTweaks.dll

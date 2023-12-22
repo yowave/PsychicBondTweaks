@@ -7,6 +7,14 @@ namespace PsychicBondTweaks.Patches
     [Harmony]
     internal class Hediff_PsychicBondTorn_Patches
     {
+        // save target even if it's dead
+        [HarmonyPatch(typeof(Hediff_PsychicBondTorn), nameof(Hediff_PsychicBondTorn.ExposeData))]
+        [HarmonyPostfix]
+        public static void ExposeData_Postfix_Patch(ref HediffWithTarget __instance, Thing ___target)
+        {
+            Scribe_References.Look(ref __instance.target, "PBTweaksTarget", true);
+        }
+
         // patching getter for Visible, so the hediff will be visible on the pawn
         [HarmonyPatch(typeof(Hediff_PsychicBondTorn), nameof(Hediff_PsychicBondTorn.Visible), MethodType.Getter)]
         [HarmonyPostfix]
@@ -26,14 +34,14 @@ namespace PsychicBondTweaks.Patches
             Pawn target = __instance.target as Pawn;
             if (target is not null && !target.Dead && !target.Destroyed)
             {
-                Gene_PsychicBonding gene_PsychicBonding = pawn.genes?.GetFirstGeneOfType<Gene_PsychicBonding>();
+                Gene_PsychicBonding gene_PsychicBonding = pawn.GetPsychicBondGene();
                 if (gene_PsychicBonding != null)
                 {
                     gene_PsychicBonding.BondTo(target);
                 }
                 else
                 {
-                    target.genes?.GetFirstGeneOfType<Gene_PsychicBonding>()?.BondTo(pawn);
+                    target.GetPsychicBondGene()?.BondTo(pawn);
                 }
             }
 

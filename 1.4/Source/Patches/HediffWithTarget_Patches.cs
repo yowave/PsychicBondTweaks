@@ -1,6 +1,7 @@
 ﻿using HarmonyLib;
 using RimWorld;
 using Verse;
+using static UnityEngine.GraphicsBuffer;
 
 namespace PsychicBondTweaks.Patches
 {
@@ -12,7 +13,7 @@ namespace PsychicBondTweaks.Patches
         [HarmonyPostfix]
         public static void ShouldRemove_Postfix_Patch(ref bool __result, ref HediffWithTarget __instance)
         {
-            if (__instance is Hediff_PsychicBondTorn)
+            if (__instance is Hediff_PsychicBondTorn && __instance.target != null)
             {
                 __result = false;
             }
